@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<title></title>
+<head><h1 style="text-align: center;">Gerador de Currículo Universitário</h1></head>
+<meta charset= "UTF-8"/>
+<form action="Script_do_Formulario.php" method="post">
+<!-- DADOS PESSOAIS-->
+<fieldset><legend>Dados Pessoais</legend>
+<label for="nome">Nome: </label><input name="nome" type="text" />
+<label for="sobrenome"><br />Sobrenome: </label><input name="sobrenome" type="text" />
+<label><br />Nascimento: </label><input maxlength="2" name="dia" size="2" type="text" value="dd" />
+<input maxlength="2" name="mes" size="2" type="text" value="mm" />
+<input maxlength="4" name="ano" size="4" type="text" value="aaaa" />
+<label for="rg"><br />RG: </label><input maxlength="13" name="rg" size="13" type="text" />
+<label><br />CPF:</label><input maxlength="9" name="cpf" size="9" type="text" /> - <input maxlength="2" name="cpf2" size="2" type="text" />
+</fieldset><br /> 
+<!-- ENDEREÇO -->
+<fieldset><legend>Dados de Endere&ccedil;o</legend>
+<label for="rua">Rua:</label><input name="rua" type="text" />
+<label for="numero"><br />Numero:</label><input name="numero" size="4" type="text" />
+<label for="bairro"><br />Bairro: </label><input name="bairro" type="text" />
+<label for="estado"><br />Estado:</label><select name="estado">
+<option value="ac">Acre</option>
+<option value="al">Alagoas</option>
+<option value="am">Amazonas</option>
+<option value="ap">Amap&aacute;</option>
+<option value="ba">Bahia</option>
+<option value="ce">Cear&aacute;</option>
+<option value="df">Distrito Federal</option>
+<option value="es">Esp&iacute;rito Santo</option>
+<option value="go">Goi&aacute;s</option>
+<option value="ma">Maranh&atilde;o</option>
+<option value="mt">Mato Grosso</option>
+<option value="ms">Mato Grosso do Sul</option>
+<option value="mg">Minas Gerais</option>
+<option value="pa">Par&aacute;</option>
+<option value="pb">Para&iacute;ba</option>
+<option value="pr">Paran&aacute;</option>
+<option value="pe">Pernambuco</option>
+<option value="pi">Piau&iacute;</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="rn">Rio Grande do Norte</option>
+<option value="ro">Rond&ocirc;nia</option>
+<option value="rs">Rio Grande do Sul</option>
+<option value="rr">Roraima</option>
+<option value="sc">Santa Catarina</option>
+<option value="se">Sergipe</option>
+<option value="sp">S&atilde;o Paulo</option>
+<option value="to">Tocantins</option>
+</select><label for="cidade"><br />Cidade: </label>
+<input name="cidade" type="text" /><label for="cep"><br />CEP: </label>
+<input maxlength="5" name="cep" size="5" type="text" /> - <input maxlength="3" name="cep2" size="3" type="text" />
+</fieldset><br /> 
+<!-- DADOS DO CURRICULO -->
+<fieldset><legend>Dados do currículo</legend>
+<label for="Formação">E-mail: </label><input name="email" type="text" />
+<label for="imagem"><br />Imagem de perfil:</label><input name="imagem" type="file" /><label for="login"><br />Login de usu&aacute;rio: </label><input name="login" type="text" />
+<label for="pass"><br />Senha: </label><input name="pass" type="password" />
+<label for="passconfirm"><br />Confirme a senha: </label>
+<input name="passconfirm" type="password" /></fieldset><br /> <input type="submit" /> <input type="reset" value="Limpar" />
+</form>
+</html>
